@@ -1,0 +1,18 @@
+.modal_candidate_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 1200px;
+}
+.modal_detail_candidate {
+  height: 79vh;
+  overflow-y: scroll;
+}
+.modal_detail_candidate::-webkit-scrollbar {
+  width: 0px;
+}

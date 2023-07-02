@@ -1,0 +1,16 @@
+/* chỉnh scroll bar cho navbar thanh ngang */
+.create_scroll_navbar {
+  height: 90vh;
+  overflow-y: scroll;
+}
+.create_scroll_navbar::-webkit-scrollbar {
+  width: 0px;
+}
+.create_scroll_navbar::-webkit-scrollbar-thumb {
+  background: #8c8c8c;
+  border-radius: 4px;
+}
+
+.hidden_ccroll_modal_navbar .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+  overflow: hidden;
+}

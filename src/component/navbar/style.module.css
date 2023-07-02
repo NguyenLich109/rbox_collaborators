@@ -1,0 +1,17 @@
+.navbar {
+  width: var(--width-navbar);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 20;
+  animation-duration: 0.1s;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 1279px) {
+  .navbar {
+    animation-duration: 0.1s;
+  }
+}

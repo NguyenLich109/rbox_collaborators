@@ -1,0 +1,3 @@
+.MuiDataGrid-columnHeaderCheckbox .MuiDataGrid-columnHeaderDraggableContainer {
+  display: none !important;
+}
