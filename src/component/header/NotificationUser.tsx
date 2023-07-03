@@ -8,7 +8,7 @@ import {
   AiOutlineSetting,
   AiOutlineBell,
 } from "react-icons/ai";
-import "./header.css";
+import "./style.css";
 
 export default function NotificationUser() {
   const [turnOn, setTurnOn] = useState<null | HTMLElement>(null);
@@ -44,7 +44,7 @@ export default function NotificationUser() {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
-        className="bell_noti_header"
+        className={`bell_noti_header`}
       >
         <div className="flex items-center justify-between px-4 py-2 border-b">
           <span className="flex items-center">Thông báo</span>
@@ -52,7 +52,7 @@ export default function NotificationUser() {
             <AiOutlineClose />
           </span>
         </div>
-        <ul className="overflow-y-scroll h-80 srcoll_bell_noti">
+        <ul className={`srcoll_bell_noti overflow-y-scroll h-80`}>
           {["1", "2,", "3", "4", "5"].map((data, index) => {
             return (
               <li

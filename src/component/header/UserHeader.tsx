@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import { AiOutlineLogout, AiOutlineEdit, AiOutlineLock } from "react-icons/ai";
-import "./header.css";
+import "./style.css";
 
 export default function UserHeader() {
   const [turnOn, setTurnOn] = useState<null | HTMLElement>(null);
@@ -41,7 +40,7 @@ export default function UserHeader() {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
-        className="user_modal_header"
+        className={`user_modal_header min-w-[260px]`}
       >
         <div className="flex items-center justify-between px-4 py-2.5 border-b">
           <div className="flex items-center">
@@ -62,18 +61,27 @@ export default function UserHeader() {
             <AiOutlineLogout />
           </span>
         </div>
-        <MenuItem onClick={handleClose} className="pl-4 pr-3 py-3 text-lg">
+        <li
+          onClick={handleClose}
+          className="flex items-center pl-4 pr-3 py-3 text-lg cursor-pointer hover:bg-hover-nav "
+        >
           <AiOutlineEdit className="mr-2 text-xl" />
           Cập nhật thông tin
-        </MenuItem>
-        <MenuItem onClick={handleClose} className="pl-4 pr-3 py-3 text-lg">
+        </li>
+        <li
+          onClick={handleClose}
+          className="flex items-center pl-4 pr-3 py-3 text-lg cursor-pointer hover:bg-hover-nav"
+        >
           <AiOutlineLock className="mr-2 text-xl" />
           Đổi mật khẩu
-        </MenuItem>
-        <MenuItem onClick={handleClose} className="pl-4 pr-3 py-3 text-lg">
+        </li>
+        <li
+          onClick={handleClose}
+          className="flex items-center pl-4 pr-3 py-3 text-lg cursor-pointer hover:bg-hover-nav"
+        >
           <AiOutlineLogout className="mr-2 text-xl" />
           Đăng xuất
-        </MenuItem>
+        </li>
       </Menu>
     </div>
   );

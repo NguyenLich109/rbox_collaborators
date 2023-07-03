@@ -28,7 +28,7 @@ export default function ModalNavbar() {
         sx={{
           "& .MuiDrawer-paper": { boxSizing: "border-box", width: 260 },
         }}
-        className={`${styles.hidden_ccroll_modal_navbar} 2xl:hidden xl:block `}
+        className={`${styles.hidden_scroll_modal_navbar} 2xl:hidden xl:block `}
       >
         <DataNavbar />
       </Drawer>

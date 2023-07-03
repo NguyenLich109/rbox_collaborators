@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
+  padding-right: 276px;
+}
+
+/* css modal user */
+.user_modal_header .MuiMenu-paper {
+  top: 59px !important;
+  max-height: 100%;
+  overflow-y: hidden;
+}
+.user_modal_header .MuiMenu-list {
+  min-width: 260px;
+}
+
+/* css bell Notification */
+
+.bell_noti_header .MuiMenu-paper {
+  top: 59px !important;
+  overflow-y: hidden;
+  max-height: 100%;
+}
+.bell_noti_header .MuiMenu-list {
+  width: 410px !important;
+}
+
+/* chỉnh scroll bar cho bell notification */
+.srcoll_bell_noti::-webkit-scrollbar {
+  width: 6px;
+}
+.srcoll_bell_noti::-webkit-scrollbar-thumb {
+  background: #8c8c8c;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .bell_noti_header .MuiMenu-list {
+    width: 320px !important;
+  }
+}
